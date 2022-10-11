@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: roboto, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #b6b6b6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: monserrat, sans-serif;
+    color: #333333;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.header{
+    padding: 17px 0;
+    color: aquamarine;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_list{
+    display: flex;
+    column-gap: 55px;
+    font-family: Montserrat, sans-serif;
+}
+.menu_list li{
+    text-transform: uppercase;
+}
+h1{
+    font-family: Montserrat, sans-serif;
+    color: aquamarine;
+}
+.menu_list a:hover{
+    color: coral;
+}
+.menu_list a{
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color:aquamarine;
+    position: relative;
+}
+a{
+    color: inherit;
+}
+.menu_list a:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: coral;
+    transition: width .5s;
+}
+.menu_list a:hover:after{
+    width: 100%;
+}
+.custom{
+    list-style: none;
+}
+.custom li:before{
+    content: '\262D';
+    margin-right: 15px;
+    color: aquamarine;
+}
+.section-title{
+    text-align: center;
+}
+.section-title .uptitle{
+    margin: 0;
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+}
+.section-title h2{
+    margin: 20px 0 40px;
+    font-size: 30px;
+    line-height: 37px;
+    font-variant: small-caps;
+}
+.section-title hr{
+    width: 60px;
+    height: 4px;
+    margin: 0 auto;
+    background: coral;
+    border: none;
+}
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    row-gap: 100px;
+}
+.services-item{
+    width: 33.333%;
+    position: 0 35px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+.services-item img{
+    width: 38px;
+}
+.services-item h3{
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
